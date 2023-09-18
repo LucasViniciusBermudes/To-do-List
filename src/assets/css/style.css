@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --white: #FBFCFA; 
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-size: 2rem;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 650px;
+  margin: 50px  auto;
+  background-color: var(--white);
+  padding: 25px 25px;
+  border-radius: 10px;
+  box-shadow: 5px 10px #000000 ;
+  max-height: 1500px;
+}
+
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: bolder;
+  padding: 1.5rem;
+  color: black;
+}
+
+.input-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-list .input-task {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border-color: #000000;
+  font-size: 20px;
+  padding: 12px;
+  transition: .5s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.input-list .input-task:focus {
+  outline: 1px solid black;
+}
+
+.input-list .btn-task {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #FFC436;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: .2s ease-in-out;
+}
+
+.input-list .btn-task:hover {
+  background-color: #deac37;
+
+}
+
+.div-tasks {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 495px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #C5C6D0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #76777d;
+  border-radius: 5px;
+}
+
+.div-tasks li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 5px 15px;
+    padding: 5px 5px;
+    list-style: none;
+    background-color: #e9e9ed;
+    transition: .3s ease-in;
+    border-radius: 3px;
+    height: 50px;
+}
+
+.div-tasks li:hover {
+  background-color: #d2d2d5;
+}
+
+.delete {
+  width: 40px;
+  font-weight: bold;
+  font-size: x-large;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6b031;
+  transition: .3s ease-in;
+}
